@@ -24,7 +24,7 @@ function Calculator({ sortedData }: CalculatorProps) {
 
   const onSum = (value: string,eventData: string) => {
     if(result) return setResult('')
-    if (type=== 'text' && operators.includes(eventData)) return alert(`enter ${type === 'text' ? 'value' : 'key'} to unlock operators`)
+    if ((type=== 'text' || type === 'key') && operators.includes(eventData)) return alert(`enter ${type === 'text' ? 'value' : 'key'} to unlock operators`)
     if(type === 'operator' && !operators.includes(value) ) return alert('enter operator (+ - * /) to unlock values')
     setEntry(value)
   }
