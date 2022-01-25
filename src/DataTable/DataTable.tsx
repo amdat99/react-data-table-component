@@ -7,6 +7,7 @@ import HeadRow from './TableHeadRow';
 import Row from './TableRow';
 import Column from './TableCol';
 import ColumnCheckbox from './TableColCheckbox';
+import Calculator from './Calculator'
 import Header from './TableHeader';
 import Subheader from './TableSubheader';
 import Body from './TableBody';
@@ -331,6 +332,7 @@ function DataTable<T>(props: TableProps<T>): JSX.Element {
 
 	return (
 		<ThemeProvider theme={currentTheme}>
+			<Calculator sortedData={sortedData} />
 			{showHeader() && (
 				<Header
 					title={title}

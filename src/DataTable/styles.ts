@@ -217,6 +217,21 @@ export const defaultStyles = (theme: Theme): TableStyles => ({
 			backgroundColor: theme.background.default,
 		},
 	},
+	calculator: {
+		style:{
+			borderRadius: '10px',
+			position: 'absolute',
+			left: '23%',
+			top:'0.5%',
+			backgroundColor: theme.background.default,
+			color: theme.text.primary,
+			padding: '7px',
+			margin: '10px 10px 10px 10px',
+			width: '50%',
+			zIndex: 99999,
+			boxShadow: 'rgb(0 0 0 / 10%) 0 1px 3px 0',
+		}
+	}
 });
 
 export const createStyles = (

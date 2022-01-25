@@ -212,6 +212,9 @@ export interface TableStyles {
 	progress?: {
 		style: CSSObject;
 	};
+	calculator?: {
+		style: CSSObject;
+	}
 }
 
 export interface PaginationOptions {
